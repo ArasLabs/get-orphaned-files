@@ -19,6 +19,7 @@ Project | Aras
 ## Installation
 
 #### Important!
+
 **Always back up your code tree and database before applying an import package or code tree patch!**
 
 ### Pre-requisites
@@ -28,13 +29,15 @@ Project | Aras
 3. **aras.labs.getOrphanFiles** import package
 
 ### Install Steps
+
 #### Database Installation
+
 1. Backup your database and store the BAK file in a safe place.
 2. Open up the Aras Package Import tool.
-3. Enter your login credentials and click **Login**
-  * _Note: You must login as root for the package import to succeed!_
+3. Enter your login credentials and click **Login**.
+   * _Note: You must login as root for the package import to succeed!_
 4. Enter the package name in the TargetRelease field.
-  * Optional: Enter a description in the Description field.
+   * Optional: Enter a description in the Description field.
 5. Enter the path to your local `..\GetOrphanFiles\Imports\imports.mf` file in the Manifest File field.
 6. Select **aras.labs.getOrphanFiles** in the Available for Import field.
 7. Select Type = **Merge** and Mode = **Thorough Mode**.
@@ -44,19 +47,20 @@ Project | Aras
 You can now run the Get Orphan Files method.
 
 ### Usage
-1. Login as admin
-2. Navigate to the **Administration > Methods** folder in the TOC
-3. Search for the Method named **Get Orphan Files**
-4. Run the **Run Server Method** action
-5. The method should return the names and IDs of all orphaned files, if there are any
+
+1. Login as admin.
+2. Navigate to the **Administration > Methods** folder in the TOC.
+3. Search for the Method named **Get Orphan Files**.
+4. Run the **Run Server Method** action.
+5. The method should return the names and IDs of all orphaned files, if there are any.
 
 ## Contributing
 
 1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request
+2. Create your feature branch: `git checkout -b my-new-feature`.
+3. Commit your changes: `git commit -am 'Add some feature'`.
+4. Push to the branch: `git push origin my-new-feature`.
+5. Submit a pull request.
 
 ## Credits
 
@@ -64,4 +68,4 @@ Created by Christopher Gillis for Aras Labs. @cgillis-aras
 
 ## License
 
-Published to Github under the MIT license. See the [LICENSE file](./LICENSE.md) for license rights and limitations.
+Published to Github under the MIT license. See the [LICENSE file](./LICENSE) for license rights and limitations.
